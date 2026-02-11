@@ -127,27 +127,20 @@ Desarrollador de Software con sólida experiencia en desarrollo de aplicaciones 
 
 ---
 
-# Script de Automatización de Documentación con Copilot CLI
-Write-Host "🚀 Iniciando proceso de documentación técnica..." -ForegroundColor Cyan
+# Instrucciones de Contexto para el Proyecto Final
 
-# 1. Documentación de Código (Comentarios XML)
-Write-Host "📝 Paso 1: Generando comentarios XML en el código..." -ForegroundColor Yellow
-gh copilot suggest "Añade comentarios XML (<summary>, <param>, <returns>) a todos los métodos públicos en Controllers, DTOs y Entities de mi solución .NET siguiendo Clean Code. No cambies la lógica, solo añade los comentarios." 
+## Perfil del Proyecto
+- **Backend:** .NET 8/9, Web API, Entity Framework Core.
+- **Frontend:** Angular (v17+), TypeScript, Arquitectura basada en componentes y servicios.
+- **Estilo de Documentación:** Académico y profesional para entrega de fin de carrera.
 
-# 2. Generación del Informe Técnico (Wiki)
-Write-Host "📊 Paso 2: Generando Informe Técnico y Arquitectura..." -ForegroundColor Yellow
-$reportPrompt = @"
-Analiza mi solución .NET completa y genera un informe técnico en Markdown con:
-- Resumen ejecutivo.
-- Análisis de arquitectura por capas (Explicando la jerarquía de carpetas).
-- Detalle de Seguridad (JWT, Middlewares).
-- Guía de instalación y configuración del appsettings.json.
-Estructura la respuesta con encabezados claros.
-"@
-gh copilot suggest $reportPrompt > Informe_Tecnico.md
+## Reglas de Skill para Documentación
+1. **Comentarios XML:** Siempre que se genere documentación en C#, usar el estándar de Microsoft (`<summary>`, `<param>`, `<returns>`). 
+2. **JSDoc:** Para Angular/TypeScript, usar el estándar JSDoc explicando tipos de datos y propósitos de los métodos.
+3. **Diagramas:** Preferir siempre Mermaid.js para diagramas de flujo, secuencia y entidad-relación.
+4. **Idioma:** Toda la documentación pública y comentarios deben estar en español técnico profesional.
 
-# 3. Generación del Diagrama de Base de Datos (Mermaid)
-Write-Host "🧜‍♂️ Paso 3: Generando diagrama de Entidad-Relación (Mermaid)..." -ForegroundColor Yellow
-gh copilot suggest "Basado en mis clases de Entity Framework, genera un diagrama ER en formato Mermaid.js. Incluye relaciones 1:N y M:N." >> Informe_Tecnico.md
-
-Write-Host "✅ ¡Proceso completado! Revisa Informe_Tecnico.md y los cambios en tu código." -ForegroundColor Green
+## Reglas de Arquitectura
+- El código debe seguir principios SOLID y Clean Code.
+- En .NET, separar claramente las Entities de los DTOs.
+- En Angular, la lógica de negocio debe estar en Services, no en Components.
