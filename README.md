@@ -107,3 +107,28 @@ Desarrollador de Software con sólida experiencia en desarrollo de aplicaciones 
 - **Inglés:** Nivel B2 (Intermedio oral y escrito)  
 
 ---
+
+# Script de Automatización de Documentación con Copilot CLI
+Write-Host "🚀 Iniciando proceso de documentación técnica..." -ForegroundColor Cyan
+
+# 1. Documentación de Código (Comentarios XML)
+Write-Host "📝 Paso 1: Generando comentarios XML en el código..." -ForegroundColor Yellow
+gh copilot suggest "Añade comentarios XML (<summary>, <param>, <returns>) a todos los métodos públicos en Controllers, DTOs y Entities de mi solución .NET siguiendo Clean Code. No cambies la lógica, solo añade los comentarios." 
+
+# 2. Generación del Informe Técnico (Wiki)
+Write-Host "📊 Paso 2: Generando Informe Técnico y Arquitectura..." -ForegroundColor Yellow
+$reportPrompt = @"
+Analiza mi solución .NET completa y genera un informe técnico en Markdown con:
+- Resumen ejecutivo.
+- Análisis de arquitectura por capas (Explicando la jerarquía de carpetas).
+- Detalle de Seguridad (JWT, Middlewares).
+- Guía de instalación y configuración del appsettings.json.
+Estructura la respuesta con encabezados claros.
+"@
+gh copilot suggest $reportPrompt > Informe_Tecnico.md
+
+# 3. Generación del Diagrama de Base de Datos (Mermaid)
+Write-Host "🧜‍♂️ Paso 3: Generando diagrama de Entidad-Relación (Mermaid)..." -ForegroundColor Yellow
+gh copilot suggest "Basado en mis clases de Entity Framework, genera un diagrama ER en formato Mermaid.js. Incluye relaciones 1:N y M:N." >> Informe_Tecnico.md
+
+Write-Host "✅ ¡Proceso completado! Revisa Informe_Tecnico.md y los cambios en tu código." -ForegroundColor Green
