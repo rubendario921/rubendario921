@@ -1,4 +1,4 @@
-un# Rubén Darío Carrillo López  
+## Rubén Darío Carrillo López  
 **Desarrollador de Software Full Stack**
 
 ---
@@ -40,25 +40,6 @@ Desarrollador de Software con sólida experiencia en desarrollo de aplicaciones 
 - Investigación e implementación de nuevas tecnologías y prácticas DevOps.  
 
 **Tecnologías:** C#, .NET 8+, ASPX, Telerik, Docker, SQL Server, Azure DevOps  
-
-
-# Instrucciones de Contexto para el Proyecto Final
-
-## Perfil del Proyecto
-- **Backend:** .NET 8/9, Web API, Entity Framework Core.
-- **Frontend:** Angular (v17+), TypeScript, Arquitectura basada en componentes y servicios.
-- **Estilo de Documentación:** Académico y profesional para entrega de fin de carrera.
-
-## Reglas de Skill para Documentación
-1. **Comentarios XML:** Siempre que se genere documentación en C#, usar el estándar de Microsoft (`<summary>`, `<param>`, `<returns>`). 
-2. **JSDoc:** Para Angular/TypeScript, usar el estándar JSDoc explicando tipos de datos y propósitos de los métodos.
-3. **Diagramas:** Preferir siempre Mermaid.js para diagramas de flujo, secuencia y entidad-relación.
-4. **Idioma:** Toda la documentación pública y comentarios deben estar en español técnico profesional.
-
-## Reglas de Arquitectura
-- El código debe seguir principios SOLID y Clean Code.
-- En .NET, separar claramente las Entities de los DTOs.
-- En Angular, la lógica de negocio debe estar en Services, no en Components.
 
 ### **Desarrollador de Software** – Milenium360  
 *Febrero 2024 – Octubre 2024*  
@@ -126,21 +107,3 @@ Desarrollador de Software con sólida experiencia en desarrollo de aplicaciones 
 - **Inglés:** Nivel B2 (Intermedio oral y escrito)  
 
 ---
-
-# Instrucciones de Contexto para el Proyecto Final
-
-## Perfil del Proyecto
-- **Backend:** .NET 8/9, Web API, Entity Framework Core.
-- **Frontend:** Angular (v17+), TypeScript, Arquitectura basada en componentes y servicios.
-- **Estilo de Documentación:** Académico y profesional para entrega de fin de carrera.
-
-## Reglas de Skill para Documentación
-1. **Comentarios XML:** Siempre que se genere documentación en C#, usar el estándar de Microsoft (`<summary>`, `<param>`, `<returns>`). 
-2. **JSDoc:** Para Angular/TypeScript, usar el estándar JSDoc explicando tipos de datos y propósitos de los métodos.
-3. **Diagramas:** Preferir siempre Mermaid.js para diagramas de flujo, secuencia y entidad-relación.
-4. **Idioma:** Toda la documentación pública y comentarios deben estar en español técnico profesional.
-
-## Reglas de Arquitectura
-- El código debe seguir principios SOLID y Clean Code.
-- En .NET, separar claramente las Entities de los DTOs.
-- En Angular, la lógica de negocio debe estar en Services, no en Components.
